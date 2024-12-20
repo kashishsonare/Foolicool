@@ -1,6 +1,52 @@
+/* styles/globals.css */
+
+/* Tailwind Base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('/MavenPro-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap'); */
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('/ABeeZee-Regular.ttf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: 'Gotham-medium';
+  src: url('/Gotham-Medium.otf') format('woff2');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('/Gotham-Book.otf') format('woff2');
+  font-style: normal;
+  font-weight: 325;
+}
+
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Hornbill-Personal Use Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 :root {
   --background: #ffffff;
@@ -18,4 +64,35 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  width: max-content;
+}
+
+
+.hornbill-font {
+  font-family: 'Hornbill', sans-serif;
+}
+
+.gotham-font {
+  font-family: 'Gotham', sans-serif;
+}
+
+
+.abeezee-font {
+  font-family: 'ABeeZee', sans-serif;
 }
